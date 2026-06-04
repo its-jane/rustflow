@@ -1,0 +1,19 @@
+{
+  "name": "rust/flow — Learn Rust visually",
+  "short_name": "rust/flow",
+  "description": "Interactive, demonstrative tour of the Rust programming language.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#1a1410",
+  "theme_color": "#d97706",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/app-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

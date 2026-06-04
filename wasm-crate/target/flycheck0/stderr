@@ -1,0 +1,213 @@
+   0.088714700s  INFO prepare_target{force=false package_id=rustflow_wasm v0.1.0 (C:\Users\HP\Downloads\rustflow\wasm-crate) target="rustflow_wasm"}: cargo::core::compiler::fingerprint: fingerprint error for rustflow_wasm v0.1.0 (C:\Users\HP\Downloads\rustflow\wasm-crate)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rustflow_wasm", ["cdylib", "rlib"], "C:\\Users\\HP\\Downloads\\rustflow\\wasm-crate\\src\\lib.rs", Edition2021) }
+   0.101451600s  INFO prepare_target{force=false package_id=rustflow_wasm v0.1.0 (C:\Users\HP\Downloads\rustflow\wasm-crate) target="rustflow_wasm"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\HP\Downloads\rustflow\wasm-crate\target\debug\.fingerprint\rustflow_wasm-65d02773228f4931\lib-rustflow_wasm`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.133062300s  INFO prepare_target{force=false package_id=wasm-bindgen v0.2.122 target="wasm_bindgen"}: cargo::core::compiler::fingerprint: fingerprint error for wasm-bindgen v0.2.122/Check { test: false }/TargetInner { tested: false, ..: lib_target("wasm_bindgen", ["lib"], "C:\\Users\\HP\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\wasm-bindgen-0.2.122\\src\\lib.rs", Edition2021) }
+   0.133107500s  INFO prepare_target{force=false package_id=wasm-bindgen v0.2.122 target="wasm_bindgen"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\HP\Downloads\rustflow\wasm-crate\target\debug\.fingerprint\wasm-bindgen-2f29c3e6625c9718\lib-wasm_bindgen`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.134592200s  INFO prepare_target{force=false package_id=cfg-if v1.0.4 target="cfg_if"}: cargo::core::compiler::fingerprint: fingerprint error for cfg-if v1.0.4/Check { test: false }/TargetInner { ..: lib_target("cfg_if", ["lib"], "C:\\Users\\HP\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\cfg-if-1.0.4\\src\\lib.rs", Edition2018) }
+   0.134634300s  INFO prepare_target{force=false package_id=cfg-if v1.0.4 target="cfg_if"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\HP\Downloads\rustflow\wasm-crate\target\debug\.fingerprint\cfg-if-38379743a7c2c287\lib-cfg_if`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.135911400s  INFO prepare_target{force=false package_id=once_cell v1.21.4 target="once_cell"}: cargo::core::compiler::fingerprint: fingerprint error for once_cell v1.21.4/Check { test: false }/TargetInner { ..: lib_target("once_cell", ["lib"], "C:\\Users\\HP\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\once_cell-1.21.4\\src\\lib.rs", Edition2021) }
+   0.135952400s  INFO prepare_target{force=false package_id=once_cell v1.21.4 target="once_cell"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\HP\Downloads\rustflow\wasm-crate\target\debug\.fingerprint\once_cell-efbecef3e2cac224\lib-once_cell`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.154268600s  INFO prepare_target{force=false package_id=wasm-bindgen-shared v0.2.122 target="wasm_bindgen_shared"}: cargo::core::compiler::fingerprint: fingerprint error for wasm-bindgen-shared v0.2.122/Check { test: false }/TargetInner { ..: lib_target("wasm_bindgen_shared", ["lib"], "C:\\Users\\HP\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\wasm-bindgen-shared-0.2.122\\src\\lib.rs", Edition2021) }
+   0.154316300s  INFO prepare_target{force=false package_id=wasm-bindgen-shared v0.2.122 target="wasm_bindgen_shared"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\HP\Downloads\rustflow\wasm-crate\target\debug\.fingerprint\wasm-bindgen-shared-d6924bde5a20caae\lib-wasm_bindgen_shared`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.156240100s  INFO prepare_target{force=false package_id=unicode-ident v1.0.24 target="unicode_ident"}: cargo::core::compiler::fingerprint: fingerprint error for unicode-ident v1.0.24/Check { test: false }/TargetInner { ..: lib_target("unicode_ident", ["lib"], "C:\\Users\\HP\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\unicode-ident-1.0.24\\src\\lib.rs", Edition2021) }
+   0.156345500s  INFO prepare_target{force=false package_id=unicode-ident v1.0.24 target="unicode_ident"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\HP\Downloads\rustflow\wasm-crate\target\debug\.fingerprint\unicode-ident-fbdfa39f6f1ca3d1\lib-unicode_ident`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.158263500s  INFO prepare_target{force=false package_id=rustflow_wasm v0.1.0 (C:\Users\HP\Downloads\rustflow\wasm-crate) target="rustflow_wasm"}: cargo::core::compiler::fingerprint: fingerprint error for rustflow_wasm v0.1.0 (C:\Users\HP\Downloads\rustflow\wasm-crate)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("rustflow_wasm", ["cdylib", "rlib"], "C:\\Users\\HP\\Downloads\\rustflow\\wasm-crate\\src\\lib.rs", Edition2021) }
+   0.158322000s  INFO prepare_target{force=false package_id=rustflow_wasm v0.1.0 (C:\Users\HP\Downloads\rustflow\wasm-crate) target="rustflow_wasm"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\HP\Downloads\rustflow\wasm-crate\target\debug\.fingerprint\rustflow_wasm-667f8607191a2496\test-lib-rustflow_wasm`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking unicode-ident v1.0.24
+    Checking once_cell v1.21.4
+    Checking cfg-if v1.0.4
+    Checking wasm-bindgen-shared v0.2.122
+    Checking wasm-bindgen v0.2.122
+    Checking rustflow_wasm v0.1.0 (C:\Users\HP\Downloads\rustflow\wasm-crate)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 7.70s

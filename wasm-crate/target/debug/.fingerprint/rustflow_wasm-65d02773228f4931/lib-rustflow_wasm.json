@@ -1,0 +1,20 @@
+{
+  "rustc": 1562763049001146449,
+  "features": "[]",
+  "declared_features": "[]",
+  "target": 4361702231650231395,
+  "profile": 17672942494452627365,
+  "path": 10763286916239946207,
+  "deps": [[1353426359723253673, "wasm_bindgen", false, 11522238364366605173]],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug\\.fingerprint\\rustflow_wasm-65d02773228f4931\\dep-lib-rustflow_wasm",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

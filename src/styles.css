@@ -1,0 +1,206 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-rust: var(--rust);
+  --color-rust-glow: var(--rust-glow);
+  --color-ember: var(--ember);
+  --color-stack: var(--stack);
+  --color-heap: var(--heap);
+  --color-owner: var(--owner);
+  --color-borrow: var(--borrow);
+  --color-mut: var(--mut);
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+:root {
+  --radius: 0.625rem;
+
+  /* Dark, terminal-inspired palette */
+  --background: oklch(0.16 0.015 40);
+  --foreground: oklch(0.96 0.015 75);
+
+  --card: oklch(0.2 0.02 40);
+  --card-foreground: oklch(0.96 0.015 75);
+
+  --popover: oklch(0.2 0.02 40);
+  --popover-foreground: oklch(0.96 0.015 75);
+
+  --primary: oklch(0.7 0.18 45); /* rust orange */
+  --primary-foreground: oklch(0.15 0.02 40);
+
+  --secondary: oklch(0.26 0.02 40);
+  --secondary-foreground: oklch(0.96 0.015 75);
+
+  --muted: oklch(0.24 0.015 40);
+  --muted-foreground: oklch(0.72 0.02 60);
+
+  --accent: oklch(0.3 0.05 40);
+  --accent-foreground: oklch(0.96 0.015 75);
+
+  --destructive: oklch(0.62 0.22 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  --border: oklch(0.3 0.02 40);
+  --input: oklch(0.28 0.02 40);
+  --ring: oklch(0.7 0.18 45);
+
+  /* Rust theme accents */
+  --rust: oklch(0.7 0.19 45);
+  --rust-glow: oklch(0.78 0.2 55);
+  --ember: oklch(0.68 0.22 30);
+  --stack: oklch(0.75 0.15 200); /* cool blue */
+  --heap: oklch(0.78 0.17 145); /* green */
+  --owner: oklch(0.75 0.19 55); /* amber */
+  --borrow: oklch(0.78 0.15 250); /* violet */
+  --mut: oklch(0.72 0.2 15); /* red-pink */
+
+  --gradient-hero:
+    radial-gradient(ellipse at top, oklch(0.3 0.1 45 / 0.55), transparent 60%),
+    linear-gradient(180deg, oklch(0.18 0.02 40), oklch(0.14 0.015 40));
+  --gradient-rust: linear-gradient(135deg, var(--rust), var(--ember));
+  --shadow-glow: 0 0 40px oklch(0.7 0.19 45 / 0.35);
+  --shadow-panel: 0 20px 60px -20px oklch(0 0 0 / 0.6);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-feature-settings: "ss01", "cv11";
+  }
+  code,
+  pre {
+    font-family: var(--font-mono);
+  }
+
+  ::selection {
+    background: oklch(0.7 0.19 45 / 0.35);
+    color: var(--foreground);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Light theme overrides — applied when <html class="light"> */
+  :root.light {
+    --background: oklch(0.985 0.005 75);
+    --foreground: oklch(0.2 0.02 40);
+
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.2 0.02 40);
+
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.2 0.02 40);
+
+    --primary: oklch(0.58 0.2 40);
+    --primary-foreground: oklch(0.99 0.005 75);
+
+    --secondary: oklch(0.94 0.01 60);
+    --secondary-foreground: oklch(0.2 0.02 40);
+
+    --muted: oklch(0.95 0.01 60);
+    --muted-foreground: oklch(0.42 0.02 50);
+
+    --accent: oklch(0.93 0.04 60);
+    --accent-foreground: oklch(0.2 0.02 40);
+
+    --border: oklch(0.88 0.01 60);
+    --input: oklch(0.92 0.01 60);
+    --ring: oklch(0.58 0.2 40);
+
+    --rust: oklch(0.58 0.2 40);
+    --rust-glow: oklch(0.66 0.2 50);
+    --ember: oklch(0.54 0.22 30);
+    --stack: oklch(0.48 0.16 220);
+    --heap: oklch(0.5 0.17 150);
+    --owner: oklch(0.58 0.19 60);
+    --borrow: oklch(0.52 0.18 260);
+    --mut: oklch(0.52 0.22 15);
+
+    --gradient-hero:
+      radial-gradient(ellipse at top, oklch(0.85 0.1 45 / 0.45), transparent 60%),
+      linear-gradient(180deg, oklch(0.99 0.01 70), oklch(0.96 0.01 70));
+    --shadow-panel: 0 12px 40px -18px oklch(0.3 0.05 40 / 0.25);
+  }
+}
+
+@utility text-gradient-rust {
+  background: var(--gradient-rust);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility surface-panel {
+  background: linear-gradient(180deg, oklch(0.22 0.02 40), oklch(0.18 0.02 40));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-panel);
+}
+
+@utility glow-rust {
+  box-shadow: var(--shadow-glow);
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 oklch(0.7 0.19 45 / 0.6);
+  }
+  50% {
+    box-shadow: 0 0 0 12px oklch(0.7 0.19 45 / 0);
+  }
+}
+@utility animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes float-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@utility animate-float-up {
+  animation: float-up 0.5s ease-out both;
+}
